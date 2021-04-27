@@ -421,8 +421,6 @@ body ::-webkit-scrollbar {
 }
 
 .btn {
-  max-width: 40px;
-  width: 100%;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-align: center;
@@ -434,11 +432,18 @@ body ::-webkit-scrollbar {
   border-radius: 3px;
   text-decoration: none;
   padding: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn:hover {
   cursor: pointer;
   opacity: 0.85;
+}
+
+.btn-refresh {
+  height: 40px;
+  max-width: 40px;
+  width: 100%;
 }
 
 .btn-refresh .icon- {
@@ -472,16 +477,35 @@ body ::-webkit-scrollbar {
   height: 40px;
 }
 
+.btn-enter {
+  height: 35px;
+  padding: 0 35px;
+  background-color: #F58220;
+}
+
+.cancel {
+  background-color: #A6A6A6;
+}
+
 .btn-online {
   background-color: #04ae00;
   color: #ffffff;
   border-radius: 5px;
   text-align: center;
-  width: 40px;
+  width: 100%;
+  max-width: 60px;
   height: 10px;
   font-size: 10px;
   margin-top: 3px;
   margin-bottom: 0;
+}
+
+.btn-input {
+  height: 35px;
+  padding: 0 35px;
+  border-color: #ffffff;
+  background-color: #F58220;
+  margin: 0 5px;
 }
 
 @media (max-width: 768px) {
@@ -848,30 +872,22 @@ body ::-webkit-scrollbar {
   background-color: #e7e7e7;
 }
 
-.chat .answer-box {
+.answer-box {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%;
   padding-top: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
-.chat .answer-box .chat-input {
+.chat-input {
   width: 85%;
   height: 32px;
   border: 1px solid #e7e7e7;
   font-size: 12px;
-}
-
-.chat .answer-box .btn {
-  height: 35px;
-  padding: 0 35px;
-  border-color: #ffffff;
-  background-color: #F58220;
-  margin: 0 5px;
 }
 
 .modal-quit {
@@ -905,6 +921,7 @@ body ::-webkit-scrollbar {
 }
 
 .modal-login {
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 10px;
   width: 50%;
@@ -924,19 +941,11 @@ body ::-webkit-scrollbar {
   padding: 40px 0;
 }
 
-.modal-login .user-data input {
+.modal-login .user-data .text .password {
   height: 35px;
   border: solid 1px #A6A6A6;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
   color: #A6A6A6;
-}
-
-.modal-login .user-data .btn {
-  height: 35px;
-  padding: 0 35px;
-  border-color: #ffffff;
-  background-color: #F58220;
 }
 
 .overlay {
@@ -1251,6 +1260,7 @@ a {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
   white-space: nowrap;
 }
 

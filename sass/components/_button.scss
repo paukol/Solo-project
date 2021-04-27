@@ -1,6 +1,4 @@
 .btn {
-  max-width: 40px;
-  width:100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +7,7 @@
   border-radius: 3px;
   text-decoration: none;
   padding: 15px;
+  font-family: $main-font;
 
   &:hover {
     cursor: pointer;
@@ -17,6 +16,9 @@
 }
 
 .btn-refresh{
+  height: 40px;
+max-width: 40px;
+width: 100%;;
   .icon-{
     height: 15px;
     width: 15px;
@@ -47,17 +49,35 @@
   height: 40px;
 }
 
+.btn-enter {
+  height: 35px;
+  padding: 0 35px;
+  background-color: $button-color;
+}
+
+.cancel {
+  background-color: $text-color;
+}
+
 .btn-online{
   background-color: #04ae00;
   color: $color-light;
   border-radius: 5px;
   text-align: center;
-  width: 40px;
+  width: 100%;
+  max-width: 60px;
   height: 10px;
   font-size: 10px;
   margin-top: 3px;
   margin-bottom: 0;
- 
+}
+
+.btn-input {
+  height: 35px;
+  padding: 0 35px;
+  border-color: $color-light;
+  background-color: $button-color;
+  margin: 0 5px;
 }
 
 @media (max-width: 768px) {

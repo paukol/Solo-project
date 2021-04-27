@@ -20,6 +20,7 @@
     event.preventDefault();
     const clickedPage = this;
     const activeLinks = document.querySelectorAll('.nav-links  a.active');
+    
 
     for(let activeLink of activeLinks){
       activeLink.classList.remove('active');

@@ -7,7 +7,8 @@
   <title>Just do it</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./vendor/icons/css/Glyphter.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -34,7 +35,7 @@
       </div>
       <div class="answer-box">
         <input class="chat-input" type="text" placeholder="Enter the message..">
-        <a href="#" class="btn btn-input">Send</a>
+        <button class="btn btn-input">Send</button>
       </div>
     </div>
 
@@ -46,8 +47,8 @@
         <div class=" btn-close js--close-modal"></div>
       </div>
       <div class="buttons">
-        <button class="btn cancel js--close-modal">Cancel</button>
-        <button class="btn js--close-modal">Quit</button>
+        <button  class="btn cancel js--close-modal">Cancel</button>
+        <button  class="btn js--close-modal">Quit</button>
       </div>
     </div>
 
@@ -58,9 +59,9 @@
         </div>
       </div>
       <div class="user-data">
-        <input type="text" placeholder="login name" class="icon-close"></input>
+        <input type="text" placeholder="login name"></input>
         <input type="password" placeholder="password"></input>
-        <button class="btn js--close-modal">Enter</button>
+        <button class="btn btn-enter js--close-modal">Enter</button>
       </div>
     </div>
   </div>
@@ -185,51 +186,51 @@
         <form>
           <input class="form-field" type="date">
           <input class="form-field" type="date">
-          <a href="#" class="btn btn-refresh icon-refresh"></a>
+          <button class="btn btn-refresh icon-refresh"></button>
         </form>
       </div>
       <div class="table-wrapper">
         <div class="table-row-wrapper">
           <div class="records">
-          <div class="column">
-            <div class="table-row">
-              <p>Visit Signups</p>
-              <p class="number">124</p>
+            <div class="column">
+              <div class="table-row">
+                <p>Visit Signups</p>
+                <p class="number">124</p>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="table-row">
+                <p>FTD</p>
+                <p class="number">445</p>
+              </div>
+            </div>
+          </div>
+          <div class="records">
+            <div class="column">
+              <div class="table-row">
+                <p>Net deposit</p>
+                <p class="number">564</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="table-row">
+                <p>Turn over</p>
+                <p class="number">432</p>
+              </div>
             </div>
           </div>
 
-          <div class="column">
-          <div class="table-row">
-            <p>FTD</p>
-            <p class="number">445</p>
-          </div>
-        </div>
-      </div>
-      <div class="records">
-        <div class="column">
-          <div class="table-row">
-            <p>Net deposit</p>
-            <p class="number">564</p>
-          </div>
-	</div>
-          <div class="column">
-            <div class="table-row">
-              <p>Turn over</p>
-              <p class="number">432</p>
-            </div>
         </div>
       </div>
 
+      <div class="chart-title">Earnings chart</div>
+      <div class="chart-wrapper">
+        <div class="chart">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="chart-title">Earnings chart</div>
-  <div class="chart-wrapper">
-    <div class="chart">
-      <canvas id="myChart"></canvas>
-    </div>
-  </div>
-  </div>
   </div>
 
   <div id="details" class="page">
@@ -241,7 +242,7 @@
         <form class="form" action="">
           <input class="form-field" type="date">
           <input class="form-field" type="date">
-          <a href="#" class="btn btn-refresh icon-refresh"></a>
+          <button class="btn btn-refresh icon-refresh"></button>
         </form>
       </div>
       <div class="empty-line"></div>
@@ -257,7 +258,7 @@
               <th scope="col">FTD</th>
               <th scope="col">Depositors</th>
               <th scope="col">
-                <p class="deposit">Deposits($)</p><a class="icon-arrow-up"></a>
+                <p class="deposit">Deposits($)</p>
               </th>
               <th scope="col">Payouts($)</th>
               <th scope="col">Turnover</th>
@@ -382,7 +383,7 @@
       </div>
       <div class="links-wrapper">
         <div class="button-wrapper">
-          <a href="#" class="btn btn-add">+ add new</a>
+          <button class="btn btn-add">+ add new</button>
         </div>
         <ul class="links-column">
           <li>
@@ -472,7 +473,7 @@
       </div>
       <div class="links-wrapper">
         <div class="button-wrapper">
-          <a href="#" class="btn btn-add">+ add new</a>
+          <button class="btn btn-add">+ add new</button>
         </div>
         <ul class="links-column">
           <li>
@@ -525,7 +526,7 @@
           </li>
         </ul>
         <div class="button-wrapper">
-          <a href="#" class="btn btn-add">+ add new</a>
+          <button class="btn btn-add">+ add new</button>
         </div>
       </div>
     </div>
@@ -593,7 +594,7 @@
         </form>
       </div>
       <div class="button-wrapper">
-        <a href="#" class="btn btn-save">Save</a>
+        <button class="btn btn-save">Save</button>
       </div>
     </div>
   </div>
