@@ -1,0 +1,33 @@
+.body-form {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  border-bottom: 1.5px solid $background-color2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  
+  .form-field {
+    background-color: transparent;
+    border-radius: 5%;
+    border: 1.5px solid $background-color2;
+    height: 40px;
+    font-family: $main-font;
+    padding: 0 5px;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: $text-color;
+    opacity: 0.5;
+    display: block;
+    background: url("../vendor/icons/calendar.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 768px){
+  .body-form{
+    width: 80%;
+}
+}

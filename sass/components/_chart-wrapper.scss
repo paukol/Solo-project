@@ -1,0 +1,30 @@
+.chart-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  
+  .chart {
+    display: inline-block;
+    width: 700px;
+    height: 400px;    
+  }
+}
+
+.chart-title {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-family: $main-font;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+@media (max-width: 768px) {
+  .chart-wrapper {
+    width: 100%;
+  }
+}

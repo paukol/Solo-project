@@ -1,0 +1,80 @@
+.btn {
+  max-width: 40px;
+  width:100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $button-color;
+  color: $color-light;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 15px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.85;
+  }
+}
+
+.btn-refresh{
+  .icon-{
+    height: 15px;
+    width: 15px;
+    filter: invert(85%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(300%) contrast(100%);
+  }
+}
+
+.btn-add{
+  white-space: nowrap;
+  max-width: 100px;
+  width: 100%;
+}
+
+.button-wrapper{
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+  a {
+    font-family: $main-font;
+  }
+}
+
+.btn-save{
+  height: 40px;
+}
+
+.btn-online{
+  background-color: #04ae00;
+  color: $color-light;
+  border-radius: 5px;
+  text-align: center;
+  width: 40px;
+  height: 10px;
+  font-size: 10px;
+  margin-top: 3px;
+  margin-bottom: 0;
+ 
+}
+
+@media (max-width: 768px) {
+  .btn-add{
+    white-space: nowrap;
+    max-width: 100%;
+    width: 40%;
+  }
+
+  .btn-refresh {
+    padding: 0 10px;
+    min-height: 30px;
+    min-width: 30px;
+
+    img{
+      height: 12px;
+      width: 12px;
+    }
+  }
+}

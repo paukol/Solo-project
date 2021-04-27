@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just do it</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/icons/css/Glyphter.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Modale -->
+  <div class="overlay" id="overlay">
+    <div class="chat modal" id="myModalMessage">
+      <div class="header">
+        <div class="title">
+          <h4>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
+        </div>
+        <div class="btn-close js--close-modal icon-close"></div>
+      </div>
+      <div class="chat-title">
+        <img class="manager-img" src="images/manager.png" alt="manager">
+        <a href="#" class="name">Mikhael E.</a>
+        <p class="btn-online">online</p>
+      </div>
+      <div class="messages">
+        <div class="message answer">
+          Hello. Can I help you?
+        </div>
+      </div>
+      <div class="answer-box">
+        <input class="chat-input" type="text" placeholder="Enter the message..">
+        <a href="#" class="btn btn-input">Send</a>
+      </div>
+    </div>
+
+    <div class="modal modal-quit" id="myModalQuit">
+      <div class="header">
+        <div class="title">
+          <h4>Do you really want to Quit?</h4>
+        </div>
+        <div class=" btn-close js--close-modal"></div>
+      </div>
+      <div class="buttons">
+        <button class="btn cancel js--close-modal">Cancel</button>
+        <button class="btn js--close-modal">Quit</button>
+      </div>
+    </div>
+
+    <div class="modal modal-login" id="myModalLogin">
+      <div class="header">
+        <div class="title">
+          <h4>LOGIN</h4>
+        </div>
+      </div>
+      <div class="user-data">
+        <input type="text" placeholder="login name" class="icon-close"></input>
+        <input type="password" placeholder="password"></input>
+        <button class="btn js--close-modal">Enter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar-->
+  <section class="menu">
+    <div class="layout">
+      <div class="sidebar">
+        <div class="logo">Just do it
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+        <nav class="navigation-list">
+          <ul>
+            <li class="nav-links">
+              <a class="nav-link active icon-general" href="#general"></a>
+              <p class="link">General</p>
+            </li>
+            <li class="nav-links">
+              <a class="nav-link icon-details" href="#details"></a>
+              <p class="link">Details</p>
+            </li>
+            <li class="nav-links">
+              <a class="nav-link icon-links" href="#links"></a>
+              <p class="link">Links</p>
+            </li>
+            <li class="nav-links">
+              <a class="nav-link icon-banners" href="#banners"></a>
+              <p class="link">Banners</p>
+            </li>
+            <li class="nav-links">
+              <a class="nav-link icon-personaldata" href="#personaldata"></a>
+              <p class="link">Personal data</p>
+            </li>
+            <li class="nav-links">
+              <a class="nav-link icon-payout" href="#payout"></a>
+              <p class="link">Payout</p>
+            </li>
+            <li class="nav-links">
+              <a class="nav-link icon-postback" href="#postback"></a>
+              <p class="link">Postback</p>
+            </li>
+          </ul>
+        </nav>
+        <div class="top-bar-rwd">
+          <div class="rwd-line"></div>
+          <nav class="navigation-list">
+            <ul>
+              <li class="nav-links">
+                <a href="#" class="nav-link icon-wallet">
+                  <p class="link">$1,500.00</p>
+                </a>
+                <a href="#" class="nav-link icon-arrow-down"></a>
+              </li>
+              <li class="nav-links">
+                <a href="#" class="nav-link icon-notification">
+                  <p class="link">Notifications</p>
+                </a>
+              </li>
+              <li class="nav-links js--open-modal links">
+                <a href="#login" class="nav-link js--open-modal icon-profile">
+                  <p class="link">Leonardo Dicaprio</p>
+                </a>
+              </li>
+              <li class="nav-links">
+                <a href="#quit" class=" nav-link js--open-modal icon-quit">
+                  <p class="link">Log out</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contact">
+          <div class="rwd-line"></div>
+          <div class="manager-title">
+            <h3>Your Manager</h3>
+          </div>
+          <div class="manager-profile">
+            <div class="manager-image">
+              <img src="images/manager.png" alt="manager">
+            </div>
+            <a href="#chat" class="manager js--open-modal">Mikhael E.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topbar -->
+  <div class="top-bar">
+    <div class="top-menu-links">
+      <div class="box">
+        <a href="#" class="icon-wallet"></a>
+        <div class="balance">$1,500.00</div>
+        <a href="#" class="icon-arrow-down"></a>
+      </div>
+      <div class="box">
+        <a href="#" class="icon-notification"></a>
+      </div>
+      <div class="box js--open-modal" href="#login">
+        <a class="icon-profile profile"></a>
+        <div class="name-profile">
+          <p class="profile">Leonardo Dicaprio</p>
+        </div>
+      </div>
+      <div class="box">
+        <a href="#quit" class="js--open-modal quit icon-quit"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="general" class="general active page">
+    <div class="container">
+      <div class="title">
+        <h3>General statistic</h3>
+      </div>
+      <div class="body-form">
+        <form>
+          <input class="form-field" type="date">
+          <input class="form-field" type="date">
+          <a href="#" class="btn btn-refresh icon-refresh"></a>
+        </form>
+      </div>
+      <div class="table-wrapper">
+        <div class="table-row-wrapper">
+          <div class="records">
+          <div class="column">
+            <div class="table-row">
+              <p>Visit Signups</p>
+              <p class="number">124</p>
+            </div>
+          </div>
+
+          <div class="column">
+          <div class="table-row">
+            <p>FTD</p>
+            <p class="number">445</p>
+          </div>
+        </div>
+      </div>
+      <div class="records">
+        <div class="column">
+          <div class="table-row">
+            <p>Net deposit</p>
+            <p class="number">564</p>
+          </div>
+	</div>
+          <div class="column">
+            <div class="table-row">
+              <p>Turn over</p>
+              <p class="number">432</p>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="chart-title">Earnings chart</div>
+  <div class="chart-wrapper">
+    <div class="chart">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div id="details" class="page">
+    <div class="container">
+      <div class="title">
+        <h3>Detail statistic</h3>
+      </div>
+      <div class="body-form">
+        <form class="form" action="">
+          <input class="form-field" type="date">
+          <input class="form-field" type="date">
+          <a href="#" class="btn btn-refresh icon-refresh"></a>
+        </form>
+      </div>
+      <div class="empty-line"></div>
+      <div class="scroll-wrapper">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th scope="col">Tracker name</th>
+              <th scope="col">Initialed date</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Unique</th>
+              <th scope="col">Signups</th>
+              <th scope="col">FTD</th>
+              <th scope="col">Depositors</th>
+              <th scope="col">
+                <p class="deposit">Deposits($)</p><a class="icon-arrow-up"></a>
+              </th>
+              <th scope="col">Payouts($)</th>
+              <th scope="col">Turnover</th>
+              <th scope="col">Deal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>aff/sam_test</td>
+              <td>17/04/05 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+            <tr>
+              <td>aff/leo_test</td>
+              <td>15/08/02 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+            <tr>
+              <td>aff/sam_test</td>
+              <td>17/04/05 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+            <tr>
+              <td>aff/leo_test</td>
+              <td>15/08/02 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+            <tr>
+              <td>aff/sam_test</td>
+              <td>17/04/05 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+            <tr>
+              <td>aff/leo_test</td>
+              <td>15/08/02 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+            <tr>
+              <td>aff/sam_test</td>
+              <td>17/04/05 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+            <tr>
+              <td>aff/leo_test</td>
+              <td>15/08/02 (12:45)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,485.00</td>
+              <td>485.00</td>
+              <td>45.00</td>
+              <td>cpl(200)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="links" class="page">
+    <div class="container">
+      <div class="title">
+        <h3>Links</h3>
+      </div>
+      <div class="links-wrapper">
+        <div class="button-wrapper">
+          <a href="#" class="btn btn-add">+ add new</a>
+        </div>
+        <ul class="links-column">
+          <li>
+            <p>Home page</p>
+            <a href="#">http://www.homepage.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Currently offer</p>
+            <a href="#">http://www.currently.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Blurpix</p>
+            <a href="#">http://www.blurpix.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Your site</p>
+            <a href="#">http://www.yoursite.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Google</p>
+            <a href="#">http://www.google.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Facebook</p>
+            <a href="#">http://www.facebook.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Dashboard</p>
+            <a href="#">http://www.dashboard.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a lass="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Twitter</p>
+            <a href="#">http://www.twitter.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Piece of Wind</p>
+            <a href="#">http://www.pieceofwind.com</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+        </ul>
+        <div class="button-wrapper">
+          <a href="#" class="btn btn-add">+ add new</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="banners" class="page">
+    <div class="container">
+      <div class="title">
+        <h3>Banners</h3>
+      </div>
+      <div class="links-wrapper">
+        <div class="button-wrapper">
+          <a href="#" class="btn btn-add">+ add new</a>
+        </div>
+        <ul class="links-column">
+          <li>
+            <p>Banner main</p>
+            <a href="#">http://www.website.com/bannermain.gif</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Sign up banner</p>
+            <a href="#">http://www.website.com/signup.gif</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt="links"></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Banner left side</p>
+            <a href="#">http://www.website.com/leftside.gif</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Vertcial banner</p>
+            <a href="#">http://www.website.com/vert.gif</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Front banner</p>
+            <a href="#">http://www.website.com/front.gif</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+          <li>
+            <p>Horizontal banner</p>
+            <a href="#">http://www.website.com/horizontal.gif</a>
+            <div class="icons-list">
+              <a class="icon-links icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
+            </div>
+          </li>
+        </ul>
+        <div class="button-wrapper">
+          <a href="#" class="btn btn-add">+ add new</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="personaldata" class="page">
+    <div class="container">
+      <div class="title">
+        <h3>Personal data</h3>
+      </div>
+      <div class="personal-wrapper">
+        <form class="personal-form">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="user-name">
+          </div>
+          <div class="field">
+            <label>Surname</label>
+            <input type="text" name="user-surname">
+          </div>
+          <div class="field">
+            <label>E-mail</label>
+            <input type="email" name="user-email">
+          </div>
+          <div class="field">
+            <label>Phone number</label>
+            <input type="text" name="user-number">
+          </div>
+        </form>
+      </div>
+      <div class="social-wrapper">
+        <form class="personal-form">
+          <div class="field">
+            <label>Skype</label>
+            <input type="text" name="user-skype">
+          </div>
+          <div class="field">
+            <label>ICQ</label>
+            <input type="text" name="user-icq">
+          </div>
+          <div class="field">
+            <label>Msn</label>
+            <input type="text" name="user-msn">
+          </div>
+        </form>
+      </div>
+      <div class="wallet-wrapper">
+        <form class="personal-form">
+          <div class="field">
+            <label>Wallet</label>
+            <input type="text" name="user-wallet">
+          </div>
+        </form>
+      </div>
+      <div class="password-wrapper">
+        <form class="personal-form">
+          <div class="field">
+            <label>Password</label>
+            <input type="password" name="user-password">
+          </div>
+          <div class="field">
+            <label>Repeat</label>
+            <input type="password" name="user-password">
+          </div>
+        </form>
+      </div>
+      <div class="button-wrapper">
+        <a href="#" class="btn btn-save">Save</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="payout" class="page">
+    <div class="container">
+      <div class="title">
+        <h3>Payout</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="postback" class="page">
+    <div class="container">
+      <div class="title">
+        <h3>Postback</h3>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
