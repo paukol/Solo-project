@@ -11,12 +11,12 @@
   justify-content: flex-end;
 
   font-family: $main-font;
-  
+
   .top-menu-links {
     display: flex;
     align-items: center;
     flex-direction: row;
-  
+
     .box {
       display: flex;
       align-items: center;
@@ -28,8 +28,8 @@
       a {
         color: $text-color;
         font-size: 12px;
-        
-        &[class*='icon-']:hover{
+
+        &[class*='icon-']:hover {
           transform: scale(1.2);
           filter: invert(70%) sepia(71%) saturate(4103%) hue-rotate(348deg) brightness(100%) contrast(93%);
         }
@@ -37,7 +37,7 @@
     }
   }
 
-  .profile{
+  .profile {
     font-size: 11px;
     color: $text-links;
     margin-right: 10px;

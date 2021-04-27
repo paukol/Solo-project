@@ -344,7 +344,9 @@ template {
   display: none;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -415,8 +417,11 @@ body ::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
-  .body-form {
-    width: 80%;
+  .btn.btn-refresh {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: block;
+        flex-direction: block;
   }
 }
 
@@ -1101,16 +1106,19 @@ body ::-webkit-scrollbar {
   border-bottom: 1px solid #e7e7e7;
 }
 
-.scroll-wrapper .content-table th, .scroll-wrapper .content-table td {
+.scroll-wrapper .content-table th,
+.scroll-wrapper .content-table td {
   padding: 22px 25px;
 }
 
-.scroll-wrapper .content-table th:hover, .scroll-wrapper .content-table td:hover {
+.scroll-wrapper .content-table th:hover,
+.scroll-wrapper .content-table td:hover {
   background-color: #f5f5f3;
   color: #000000;
 }
 
-.scroll-wrapper .content-table th:hover .icon-arrow-up, .scroll-wrapper .content-table td:hover .icon-arrow-up {
+.scroll-wrapper .content-table th:hover .icon-arrow-up,
+.scroll-wrapper .content-table td:hover .icon-arrow-up {
   opacity: 1;
 }
 
