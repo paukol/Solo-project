@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Just do it</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,56 +41,106 @@
         <li>Lorem ipsum dolor <strong>sit amet</strong></li>
         <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
     </ol>
+    <div class="container">
+        <div class="row">
+            <div class=" col-6 personal-wrapper">
+                <form class="personal-form">
+                    <div class="field">
+                        <label>Name</label>
+                        <input type="text" name="user-name">
+                    </div>
+                </form>
+            </div>
 
-    <div class="container">BUTTONS
-        <div class="row">
-            <div class="col">
-                <button class="btn cancel js--close-modal">Cancel</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col ">
-                <button class="btn js--close-modal">Quit</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col ">
-                <button class="btn js--close-modal">Enter</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col ">
-                <div class="button-wrapper">
-                    <a href="#" class="btn btn-add">+ add new</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col ">
-                <div class="button-wrapper">
-                    <a href="#" class="btn btn-save">Save</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col ">
-                <div class="button-wrapper">
-                    <a href="#" class="btn btn-input">Send</a>
+            <div class=" col-6 personal-wrapper">
+                <div class="password-wrapper">
+                    <form class="personal-form">
+                        <div class="field">
+                            <label>Password</label>
+                            <input type="password" name="user-password">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">calendar form
-        <div >
-            <div class="col">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 answer-box">
+                <input class="chat-input" type="text" placeholder="Enter the message..">
+                <button class="btn btn-input">Send</button>
+            </div>
+            <div class="col-6 body-form">
                 <form>
                     <input class="form-field" type="date">
                     <input class="form-field" type="date">
-                    <a href="#" class="btn btn-refresh icon-refresh"></a>
+                    <button class="btn btn-refresh icon-refresh"></button>
                 </form>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 table-wrapper">
+                <div class="table-row-wrapper">
+                    <div class="records">
+                        <div class="column">
+                            <div class="table-row">
+                                <p>Visit Signups</p>
+                                <p class="number">124</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="table-row">
+                                <p>FTD</p>
+                                <p class="number">445</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="col-6 links-column">
+                <li>
+                    <p>Home page</p>
+                    <a href="#">http://www.homepage.com</a>
+                    <div class="icons-list">
+                        <a class="icon-links icons" alt=""></a>
+                        <a class="icon-trash icons" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 button-wrapper">
+                <button class="btn btn-add">+ add new</button>
+            </div>
+            <div class="col-3 button-wrapper">
+                <button class="btn btn-save">Save</button>
+            </div>
+            <div class="buttons col-3">
+                <button class="btn cancel js--close-modal">Cancel</button>
+                <button class="btn js--close-modal">Quit</button>
+            </div>
+            <p class="col-3 btn-online">online</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div  class="col-6 title">
+                <h3>General statistic</h3>
+              </div>
+              <div class="col-6 manager-title">
+                <h3>Your Manager</h3>
+              </div>
+            </div>
+        </div>
+        
+   
 </body>
 
 </html>
