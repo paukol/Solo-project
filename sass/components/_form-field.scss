@@ -27,9 +27,8 @@
 }
 
 @media (max-width: 768px) {
-
-  .btn.btn-refresh {
-    display: flex;
-    flex-direction: block;
+  form{
+    width: 50%;
+    justify-content: center;
   }
 }

@@ -9,7 +9,6 @@
     menuButton.addEventListener('click', function (event) {
       event.preventDefault();
       sidebar.classList.toggle('active');
-      console.log('sidebar', sidebar);
     })
   };
 
@@ -46,6 +45,7 @@
   /* Modals */
   function closeModal() {
     document.getElementById('overlay').classList.remove('show');
+    console.log('active');
   }
 
   document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
