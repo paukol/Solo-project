@@ -76,22 +76,25 @@
   }
 
   document.querySelector('.manager').addEventListener('click', function (e) {
-    if (e.target === this) {
-      openModal('#myModalMessage');
-    }
+      openModal('#ModalMessage');
   });
 
   document.querySelector('.quit').addEventListener('click', function (e) {
-    if (e.target === this) {
-      openModal('#myModalQuit');
-    }
+      openModal('#ModalQuit');
   });
 
   document.querySelector('.profile').addEventListener('click', function (e) {
-    if (e.target === this) {
-      openModal('#myModalLogin');
-    }
+      openModal('#ModalLogin');
   });
+
+  document.querySelector('.out').addEventListener('click', function (e) {
+    openModal('#ModalQuit');
+  });
+
+  document.querySelector('.log').addEventListener('click', function (e) {
+    openModal('#ModalLogin');
+  });
+
 
 
   /* Chart */

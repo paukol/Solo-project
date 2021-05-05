@@ -16,7 +16,7 @@
 <body>
   <!-- Modale -->
   <div class="overlay" id="overlay">
-    <div class="chat modal" id="myModalMessage">
+    <div class="chat modal" id="ModalMessage">
       <div class="header">
         <div class="title">
           <h4>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
@@ -35,11 +35,11 @@
       </div>
       <div class="answer-box">
         <input class="chat-input" type="text" placeholder="Enter the message..">
-        <button class="btn btn-input" type="button">Send</button>
+        <a class="btn btn-input" >Send</a>
       </div>
     </div>
 
-    <div class="modal modal-quit" id="myModalQuit">
+    <div class="modal modal-quit" id="ModalQuit">
       <div class="header">
         <div class="title">
           <h4>Do you really want to Quit?</h4>
@@ -47,12 +47,12 @@
         <div class=" btn-close js--close-modal"></div>
       </div>
       <div class="buttons">
-        <button  class="btn cancel js--close-modal" type="button">Cancel</button>
-        <button  class="btn js--close-modal" type="button">Quit</button>
+        <a  class="btn cancel js--close-modal" >Cancel</a>
+        <a  class="btn js--close-modal" >Quit</a>
       </div>
     </div>
 
-    <div class="modal modal-login" id="myModalLogin">
+    <div class="modal modal-login" id="ModalLogin">
       <div class="header">
         <div class="title">
           <h4>LOGIN</h4>
@@ -61,7 +61,7 @@
       <div class="user-data">
         <input type="text" placeholder="login name">
         <input type="password" placeholder="password">
-        <button class="btn btn-enter js--close-modal" type="button">Enter</button>
+        <a class="btn btn-enter js--close-modal" >Enter</a>
       </div>
     </div>
   </div>
@@ -109,6 +109,7 @@
             </li>
           </ul>
         </nav>
+
         <div class="top-bar-rwd">
           <div class="rwd-line"></div>
           <nav class="navigation-list">
@@ -124,13 +125,13 @@
                   <p class="link">Notifications</p>
                 </a>
               </li>
-              <li class="nav-links js--open-modal links">
-                <a href="#login" class="nav-link js--open-modal icon-profile">
+              <li class="nav-links js-- open-modal  log">
+                <a href="#login" class="nav-link icon-profile">
                   <p class="link">Leonardo Dicaprio</p>
                 </a>
               </li>
-              <li class="nav-links">
-                <a href="#quit" class=" nav-link js--open-modal icon-quit">
+              <li class="nav-links js-- open-modal  out">
+                <a href="#quit" class=" nav-link icon-quit">
                   <p class="link">Log out</p>
                 </a>
               </li>
@@ -164,10 +165,10 @@
       <div class="box">
         <a href="#natification" class="icon-notification"></a>
       </div>
-      <div class="box js--open-modal" href="#login">
-        <a class="icon-profile profile"></a>
+      <div class="box js--open-modal  profile" href="#login">
+        <a class="icon-profile "></a>
         <div class="name-profile">
-          <p class="profile">Leonardo Dicaprio</p>
+          <p>Leonardo Dicaprio</p>
         </div>
       </div>
       <div class="box">
@@ -186,7 +187,7 @@
         <form>
           <input class="form-field" type="date">
           <input class="form-field" type="date">
-          <button class="btn btn-refresh icon-refresh" type="button"></button>
+          <a class="btn btn-refresh icon-refresh"></a>
         </form>
       </div>
       <div class="table-wrapper">
@@ -198,7 +199,6 @@
                 <p class="number">124</p>
               </div>
             </div>
-
             <div class="column">
               <div class="table-row">
                 <p>FTD</p>
@@ -206,6 +206,7 @@
               </div>
             </div>
           </div>
+          
           <div class="records">
             <div class="column">
               <div class="table-row">
@@ -242,7 +243,7 @@
         <form class="form" action="">
           <input class="form-field" type="date">
           <input class="form-field" type="date">
-          <button class="btn btn-refresh icon-refresh" type="button"></button>
+          <a class="btn btn-refresh icon-refresh"></a>
         </form>
       </div>
       <div class="empty-line"></div>
@@ -383,7 +384,7 @@
       </div>
       <div class="links-wrapper">
         <div class="button-wrapper">
-          <button class="btn btn-add" type="button">+ add new</button>
+          <a class="btn btn-add" >+ add new</a>
         </div>
         <ul class="links-column">
           <li>
@@ -439,7 +440,7 @@
             <a href="#">http://www.dashboard.com</a>
             <div class="icons-list">
               <a class="icon-links icons" alt=""></a>
-              <a lass="icon-trash icons" alt=""></a>
+              <a class="icon-trash icons" alt=""></a>
             </div>
           </li>
           <li>
@@ -473,7 +474,7 @@
       </div>
       <div class="links-wrapper">
         <div class="button-wrapper">
-          <button class="btn btn-add" type="button">+ add new</button>
+          <a class="btn btn-add" >+ add new</a>
         </div>
         <ul class="links-column">
           <li>
@@ -526,7 +527,7 @@
           </li>
         </ul>
         <div class="button-wrapper">
-          <button class="btn btn-add" type="button">+ add new</button>
+          <a class="btn btn-add" >+ add new</a>
         </div>
       </div>
     </div>
@@ -537,8 +538,8 @@
       <div class="title">
         <h3>Personal data</h3>
       </div>
-      <div class="personal-wrapper">
         <form class="personal-form">
+        <fieldset>
           <div class="field">
             <label>Name</label>
             <input type="text" name="user-name">
@@ -555,10 +556,8 @@
             <label>Phone number</label>
             <input type="text" name="user-number">
           </div>
-        </form>
-      </div>
-      <div class="social-wrapper">
-        <form class="personal-form">
+        </fieldset>
+        <fieldset>
           <div class="field">
             <label>Skype</label>
             <input type="text" name="user-skype">
@@ -571,18 +570,14 @@
             <label>Msn</label>
             <input type="text" name="user-msn">
           </div>
-        </form>
-      </div>
-      <div class="wallet-wrapper">
-        <form class="personal-form">
+        </fieldset>
+      <fieldset>
           <div class="field">
             <label>Wallet</label>
             <input type="text" name="user-wallet">
           </div>
-        </form>
-      </div>
-      <div class="password-wrapper">
-        <form class="personal-form">
+        </fieldset>
+        <fieldset class="password">  
           <div class="field">
             <label>Password</label>
             <input type="password" name="user-password">
@@ -591,12 +586,12 @@
             <label>Repeat</label>
             <input type="password" name="user-password">
           </div>
+        </fieldset>
         </form>
-      </div>
-      <div class="button-wrapper">
-        <button class="btn btn-save" type="button">Save</button>
-      </div>
     </div>
+      <div class="button-wrapper">
+        <a class="btn btn-save" >Save</a>
+      </div>
   </div>
 
   <div id="payout" class="page">

@@ -23,6 +23,11 @@
   }
 }
 
+input{
+  height: 35px;
+  border: 1.5px solid $text-color;
+  border-radius: 5%;
+}
 
 @media (min-width: 1025px) and (max-width: 1465px) {
   .page {

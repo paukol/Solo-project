@@ -12,8 +12,10 @@
     border-radius: 5%;
     border: 1.5px solid $background-color2;
     height: 40px;
+    align-items: center;
     font-family: $main-font;
     padding: 0 5px;
+    margin: 0 5px;
   }
 
   input[type="date"]::-webkit-calendar-picker-indicator {
