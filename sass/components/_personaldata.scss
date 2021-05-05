@@ -1,15 +1,13 @@
 .personal-form {
-width: 600px;
+  width: 500px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 
 .password{
   border: 0;
 }
 
   fieldset {
-    width: 400px;
     padding: 20px 0;
     border-left: 0;
     border-right: 0;
@@ -18,7 +16,6 @@ width: 600px;
   }
 
   .field {
-    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -44,14 +41,14 @@ width: 600px;
   padding: 0 25px;
 }
 
-@media (max-width: 768px) {
-  .personal-form {
-    margin-left: 20px;
-  }
-}
+// @media (max-width: 768px) {
+//   .personal-form {
+//     justify-content: center;
+//   }
+// }
 
-@media (min-width: 769px) and (max-width: 991px) {
-  .personal-form {
-    margin-left: 20px;
-  }
-}
+// @media (min-width: 769px) and (max-width: 991px) {
+//   .personal-form {
+//     margin-left: 20px;
+//   }
+// }
